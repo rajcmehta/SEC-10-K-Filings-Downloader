@@ -69,7 +69,7 @@ def main():
     """
 
     # Load the configuration file
-    with open("config.json") as fin:
+    with open("edgar-crawler\config.json") as fin:
         config = json.load(fin)["download_filings"]
 
     # Define the directories and filepaths

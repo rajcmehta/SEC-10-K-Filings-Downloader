@@ -1193,7 +1193,7 @@ def main() -> None:
     Gets the list of supported (10K, 8K, 10Q) files and extracts all textual items/sections by calling the extract_items() function.
     """
 
-    with open("config.json") as fin:
+    with open("edgar-crawler\config.json") as fin:
         config = json.load(fin)["extract_items"]
 
     filings_metadata_filepath = os.path.join(
